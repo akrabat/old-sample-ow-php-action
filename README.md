@@ -21,6 +21,23 @@ The `$args` contains the parameters passed to the action as an associative array
 * Copy `local.env.dist` to `local.env` and change `DOCKER_USER` to your username.
 * Run `./build.sh` to build the docker container, create the action and run it.
 
+Example:
+
+```text
+$ ./build.sh
+Creating Docker container
+Successfully built 4c44f796730a
+Tagging and pushing to Docker hub
+Updating OpenWhisk action 'phpaction'
+ok: updated action phpaction
+Invoking OpenWhisk action
+    wsk action invoke -br phpaction --param name Everyone
+{
+    "greeting": "Hello Everyone!",
+    "time": "Wed, 07 Jun 2017 10:53:00 +0000"
+}
+```
+
 ## Run
 
 To just run the action:
