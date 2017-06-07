@@ -2,7 +2,7 @@
 
 function main(array $args) : array
 {
-    echo "Started my PHP Action\n";
+    echo "Started my PHP Action";
 
     $name = $args["name"] ?? "World";
 

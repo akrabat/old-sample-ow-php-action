@@ -29,6 +29,5 @@ fi
 echo "Updating OpenWhisk action '$OW_ACTION_NAME'"
 wsk action update --docker $OW_ACTION_NAME $DOCKER_USER/$DOCKER_CONTAINER_NAME --web true
 
-echo "Invoking OpenWhisk action"
-echo "    wsk action invoke -br $OW_ACTION_NAME --param name Everyone"
+echo "Invoking OpenWhisk action: wsk action invoke -br $OW_ACTION_NAME --param name Everyone"
 wsk action invoke -br $OW_ACTION_NAME --param name Everyone
