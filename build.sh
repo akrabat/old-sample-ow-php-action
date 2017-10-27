@@ -28,7 +28,7 @@ if [[ ${result} != *"latest"* ]]; then
 fi
 
 echo "Updating OpenWhisk action '$OW_ACTION_NAME'"
-result=`wsk action update --docker $OW_ACTION_NAME $DOCKER_USER/$DOCKER_CONTAINER_NAME --web true`
+result=`wsk action update $OW_ACTION_NAME --docker $DOCKER_USER/$DOCKER_CONTAINER_NAME --web true`
 if [[ ${result} != *"ok:"* ]]; then
     echo "Update failed"
     echo $result
