@@ -1,8 +1,11 @@
 # Simple OpenWhisk PHP action
 
+**NOTE: Nowadays though, it's easier to use the built-in [PHP support][1].**
+
+
 This is an example of a simple OpenWhisk PHP action.
 
-It creates a [docker action][1], which has a `router.php` to respond to the 
+It creates a [docker action][2], which has a `router.php` to respond to the 
 OpenWhisk invocation API calls and an `action.php` which contains the PHP function
 to execute.
 
@@ -70,4 +73,5 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-[1]: https://github.com/apache/incubator-openwhisk/blob/master/docs/actions.md#creating-docker-actions
+[1]: https://github.com/apache/incubator-openwhisk/blob/master/docs/actions.md#creating-php-actions
+[2]: https://github.com/apache/incubator-openwhisk/blob/master/docs/actions.md#creating-docker-actions
